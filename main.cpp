@@ -6,7 +6,14 @@ using namespace std;
 
 int main(){
 	
-	person bob;
+	Person bob;
+	Person tom("Tom", "M", "stupid");
+	Person p3("Susan", "F", "pretty");
+	person mypeople[10];
+	
+	cout << bob.getStats() << endl;
+	cout << tom.getStats() << endl;
+	cout << p3.getStats() << endl;
 	
 	bob.setName("Bob");
 	bob.setAge(42);
@@ -14,9 +21,7 @@ int main(){
 	bob.setAlive(true);
 	bob.setGender("Male");
 	
-	cout << "Name: " << bob.getName() << endl;
-	cout << "Age: " << bob.getAge() << endl;
-	cout << "Alive? " << bob.getAlive() << endl;
+	cout << bob.getStats() << endl;
 	
 	return 0;
 };
