@@ -12,11 +12,15 @@ int main(){
 	person mypeople[10];
 	
 	cout << bob.getStats() << endl;
+	cout << "	Age: " << bob.getAge() << endl;
 	cout << tom.getStats() << endl;
+	cout << "	Age: " << tom.getAge() << endl;
 	cout << p3.getStats() << endl;
+	cout << "	Age: " << p3.getAge() << endl;
 	
 	bob.setName("Bob");
-	bob.setAge(42);
+	bob.setAge(1000);
+	cout << "	Age: " << bob.getAge() << endl;
 	bob.setRace("Obnoxious");
 	bob.setAlive(true);
 	bob.setGender("Male");
